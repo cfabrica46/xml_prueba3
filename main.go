@@ -39,4 +39,14 @@ func main() {
 	users := Users{Users: slice}
 
 	fmt.Println(users)
+
+	users2 := Users{Users: []User{User{Username: "xtron", Password: "01234"}, User{Username: "cfabrica46", Password: "12345"}}}
+
+	data, err := xml.MarshalIndent(users2, "", " ")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	archivo.Write(data)
 }
