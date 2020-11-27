@@ -129,7 +129,7 @@ func registrar(databases *[]user) {
 
 	defer archivoxml.Close()
 
-	_, err = archivoxml.Seek(0, 0)
+	err = archivoxml.Truncate(0)
 
 	if err != nil {
 		log.Fatal(err)
