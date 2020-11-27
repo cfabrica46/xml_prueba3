@@ -1,8 +1,10 @@
-<user>
- <Username>xtron</Username>
- <Password>01234</Password>
-</user>
-<user>
- <Username>cfabrica46</Username>
- <Password>12345</Password>
-</user>
+<users>
+  <user>
+    <username>xtron</username>
+    <password>01234</password>
+  </user>
+  <user>
+    <username>cfabrica46</username>
+    <password>12345</password>
+  </user>
+</users>
